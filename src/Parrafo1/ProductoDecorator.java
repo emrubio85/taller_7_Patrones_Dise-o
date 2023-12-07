@@ -11,8 +11,8 @@ import java.util.List;
  * @author usuario
  */
 class ProductoDecorator implements Producto {
-    private Producto productoBase;
-    private List<String> nuevasCaracteristicas;
+    protected Producto productoBase;
+    protected List<String> nuevasCaracteristicas;
 
     public ProductoDecorator(Producto productoBase, List<String> nuevasCaracteristicas) {
         this.productoBase = productoBase;
